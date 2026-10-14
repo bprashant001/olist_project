@@ -1,0 +1,11 @@
+version: 2
+
+models:
+ - name: stg_customer
+   description: "cleaned customer data, one row per customer order account"
+   columns:
+    - name: customer_id
+      tests:
+       - unique
+       - not_null
+       
